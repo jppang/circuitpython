@@ -353,6 +353,24 @@ typedef struct {
     .single_status_byte = false, \
 }
 
+// Settings for the Winbond W25Q64FV 8MiB SPI flash.
+// Datasheet:http://www.winbond.com/resource-files/w25q32fv%20revj%2006032016.pdf?__locale=en
+#define W25Q64FV {\
+    .total_size = (1 << 23), /* 8 MiB */ \
+    .start_up_time_us = 5000, \
+    .manufacturer_id = 0xef, \
+    .memory_type = 0x40, \
+    .capacity = 0x17, \
+    .max_clock_speed_mhz = 104, \
+    .quad_enable_bit_mask = 0x00, \
+    .has_sector_protection = false, \
+    .supports_fast_read = true, \
+    .supports_qspi = false, \
+    .supports_qspi_writes = false, \
+    .write_status_register_split = false, \
+    .single_status_byte = false, \
+}
+
 // Settings for the Winbond W25Q80DL 1MiB SPI flash.
 // Datasheet: https://www.winbond.com/resource-files/w25q80dv%20dl_revh_10022015.pdf
 #define W25Q80DL {\
