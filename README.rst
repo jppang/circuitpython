@@ -1,3 +1,6 @@
+To add settings to my own board: 
+WeAct STM32F411CE V2.0
+
 CircuitPython
 =============
 
